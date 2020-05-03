@@ -1,0 +1,56 @@
+@import 'assets/variables.scss';
+.changeTransactionModal{
+  top: 200px;
+    left: 388px;
+  .ant-modal-content{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 354px;
+    left: 230px;
+    top: 200px;
+    .ant-modal-footer{
+      .ant-btn{
+        background-color: $background1;
+        border: none;
+        color: white;
+      }
+      .ant-btn-primary{
+        background-color: $background4;
+      }
+      div{
+        display: flex;
+        justify-content: space-between;
+      }
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .ant-modal-body{
+      padding:10px 24px;
+      .transactionItem{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .transactionItemTitle{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+        margin-bottom: 10px;
+        .transactionItemText{
+          width: 98px;
+          height: 27px;
+          border: 1px solid #d9d9d9;
+          text-align: center;
+          margin-right: 0;
+          margin-left: auto;
+        }
+        .cells{
+          display: flex;
+          /* text-align: center; */
+          margin: auto;
+          div{
+            border: 1px solid #d9d9d9;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}

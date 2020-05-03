@@ -1,0 +1,13 @@
+@import 'assets/variables.scss';
+.leftSideBar {
+  ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    border-right: $section-border;
+  }
+  li{
+    cursor: pointer;
+    padding: 12px 41px;
+  }
+}

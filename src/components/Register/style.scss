@@ -1,0 +1,276 @@
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+@import '../responsive.scss';
+
+.register {
+  &-header {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 320px;
+    background-image: url('../../assets/images/banner1.jpg');
+    background-repeat: no-repeat;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 87px;
+      top: 40%;
+      left: 20%;
+      background-image: url('../../assets/images/star.png');
+    }
+  }
+
+  &__address {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+
+    @include desktop {
+      left: 36%;
+    }
+
+    @include tablet {
+      left: 4%;
+    }
+  }
+
+  &__logo {
+    padding: 10px;
+    &-img {
+      margin: 10px;
+    }
+    &-title {
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 60px;
+      font-weight: 900;
+    }
+  }
+
+  &__dropdown {
+    width: 400px;
+    padding: 2px 52px 4px 10px;
+    border-radius: 10px;
+
+    &__menu {
+      border-radius: 10px;
+    }
+
+    &__item {
+      &::before {
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        font-size: 20px;
+        padding-right: 10px;
+        content: '\f015';
+      }
+    }
+    &__arrow {
+      top: 18px;
+    }
+  }
+
+  &__group-btn {
+    padding: 10px 20px;
+  }
+
+  &__screen-btn {
+    margin-right: 8px;
+    background: transparent;
+    border: none;
+  }
+
+  &__logout-btn {
+    font-weight: 600;
+    font-size: 18px;
+    background: transparent;
+    transform: skew(-10deg);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #aaaaaa;
+
+    i {
+      margin: 4px;
+    }
+  }
+
+  &-main {
+    font-family: 'Nunito', sans-serif;
+    padding: 30px 0;
+
+    &__wrap {
+      margin: 0 20px;
+    }
+  }
+
+  &__account {
+    &-card {
+      border: solid 1px #f9f0ff;
+      box-shadow: 3px 3px 5px #aaaaaa;
+      padding: 20px;
+      position: relative;
+      background: #efdbff;
+      color: #1f1f1f;
+      font-size: 16px;
+      font-weight: 600;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: -10px;
+        top: -10px;
+        width: 0;
+        height: 0;
+        border-top: 200px solid #d3adf7;
+        border-right: 150px solid transparent;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        right: -10px;
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        border-bottom: 200px solid #d3adf7;
+        border-left: 150px solid transparent;
+      }
+
+      i {
+        padding: 10px;
+        min-width: 20px;
+        color: #ffa940;
+      }
+    }
+
+    &-b1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 170px;
+      padding-bottom: 10px;
+      border-bottom: solid 1px black;
+      p {
+        font-size: 24px;
+        font-weight: 900;
+        margin: 0px; // when done config defaulf scss
+      }
+    }
+
+    &-b2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 150px;
+      border-bottom: solid 1px black;
+    }
+
+    &-b3 {
+      height: 150px;
+    }
+
+    &-img {
+      text-align: center;
+      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      border: 5px solid #fff;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__items {
+    &-top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-left {
+      background: #52c41a;
+      border-radius: 5px;
+      color: #ffffff;
+      font-weight: 600;
+      padding: 5px;
+    }
+
+    &-wrap {
+      box-shadow: 3px 3px 5px #aaaaaa;
+      padding: 10px;
+      background-color: #adc6ff;
+      border-radius: 5px;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+
+    &-code {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &:nth-child(n + 5) {
+      margin-top: 30px;
+    }
+
+    @include desktop {
+      &:nth-child(n + 4) {
+        margin-top: 30px;
+      }
+    }
+
+    @include tablet {
+      &:nth-child(n) {
+        margin-top: 30px;
+      }
+    }
+
+    @include mobile {
+      &:nth-child(n) {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  &__up-btn {
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    padding: 0 20px;
+    height: 40px;
+    text-align: left;
+    font-size: 24px;
+    border: transparent;
+    transition: all 0.4s;
+    border-radius: 4px;
+    color: white;
+    background: #fa8c16;
+    box-shadow: 3px 3px 5px #aaaaaa;
+
+    i {
+      padding-right: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.05, 1.05);
+    }
+
+    @include tablet {
+      bottom: -50px;
+    }
+  }
+}

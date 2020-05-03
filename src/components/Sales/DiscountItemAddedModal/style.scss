@@ -1,0 +1,31 @@
+.discountItemAddedModal{
+  border: 1px solid black;
+    width: 127px;
+    height: 52px;
+    position: absolute;
+    top: 14px;
+    left: -150px;
+    .discountItemArrow{
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-left: 25px solid #555;
+      border-bottom: 10px solid transparent;
+      right: 0;
+      top: 50%;
+      transform: translate(100%,-50%);
+    }
+    .discountItemArrow::after{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 9px solid transparent;
+      border-left: 24px solid white;
+      border-bottom: 9px solid transparent;
+      top: 0;
+      left: 0;
+      transform: translate(-110%, -51%);
+    }
+}

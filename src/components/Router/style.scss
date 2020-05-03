@@ -1,0 +1,13 @@
+@import 'assets/variables.scss';
+.main-sale {
+  font-family: 'Nunito', sans-serif;
+  background-color: $body-background-color;
+  p {
+    margin-bottom: 0px;
+  }
+}
+.modlep {
+  .ant-modal-footer {
+    display: none;
+  }
+}

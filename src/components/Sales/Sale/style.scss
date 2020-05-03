@@ -1,0 +1,21 @@
+@import 'assets/variables.scss';
+
+.sale{
+  .main-container{
+    display: grid;
+    grid-template-columns: 205px 1fr;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .saleSection{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 25px;
+    margin-right: 25px;
+  }
+  .ant-input-suffix{
+    display: flex;
+    align-items: center;
+  }
+}

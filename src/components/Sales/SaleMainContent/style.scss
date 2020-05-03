@@ -1,0 +1,49 @@
+@import 'assets/variables.scss';
+  .saleMainContent{
+    padding: 16px 0;
+    position: relative;
+    background-color: $section-background-color;
+    .ant-input-affix-wrapper:hover{
+      border-color: $background4;
+    }
+    .ant-input-affix-wrapper-focused{
+      border-color: $background4;
+      box-shadow: 0 0 0 0.5px $background4 !important;
+    }
+    .saleItemConfirm{
+      width: 400px;
+      height: 131px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      box-shadow: rgba(0,0,0,0.3) 0 0 6px, rgba(0,0,0,0.15) 0 1px 6px;
+      padding:15px;
+      .header{
+        display: flex;
+        justify-content: space-between;
+        .ant-divider{
+          margin:15px 0;
+        }
+      }
+    }
+    .price{
+      display: flex;
+      justify-content: space-between;
+      .cell{
+        display: inline-block;
+        flex: 0 0 90%;
+        height: 30px;
+        border: 1px solid black;
+      }
+    }
+    .ant-input-search{
+      box-sizing: border-box;
+      padding: 4px 12px !important;
+      margin-bottom: 16px !important;
+    }
+    .saleItem{
+      img{
+        width:120px;
+      }
+    }
+  }

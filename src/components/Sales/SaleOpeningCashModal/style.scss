@@ -1,0 +1,32 @@
+@import 'assets/variables.scss';
+.saleOpeningCashModal{
+  .ant-modal-content{
+    display: flex;
+    flex-direction:  column-reverse;
+    width: 350px;
+    .ant-modal-footer{
+      border-bottom: $border-bottom-header;
+      div{
+        display: flex;
+      justify-content: space-between;
+      }
+      button{
+        border: none;
+        color: white;
+        &:first-child{
+          background-color: $btn-close-color;
+        }
+        &:nth-child(2){
+          background-color: $btn-save-color;
+        }
+      }
+    }
+    .ant-modal-body{
+      display: flex;
+      align-items: center;
+      input{
+        margin:0 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import 'assets/variables.scss';
+.selectCustomerModal{
+  display: flex;
+  justify-content: space-between;
+  .ant-modal-content{
+    width: 350px;
+    padding-bottom: 8px;
+  }
+  .ant-modal-body{
+    padding: 0;
+    .body{
+      padding:$modal-body-padding;
+    }
+    .header{
+      padding: $modal-header-padding;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $border-bottom-header;
+      .text{
+        font-size: $modal-header-text-size;
+      }
+      .fa-times{
+        font-size:$modal-button-close-size;
+        cursor: pointer;
+      }
+      .fa-user-plus{
+        cursor: pointer;
+        font-size: $modal-icon-size;
+        color: $background4;
+      }
+    }
+    .ant-input-search{
+      box-shadow: none;
+      &:active,
+      &:hover,
+      &:focus{
+        border-color: rbga(0,0,0,0.65) !important;
+      }
+    }
+    .ant-input-affix-wrapper-focused,
+    .ant-input-affix-wrapper{
+      border-color: rbba(0,0,0,0.65);
+    }
+  }
+  .ant-modal-footer{
+    display: none;
+  }
+  .addUser{
+    width: 27px;
+    height: 27px;
+    background-image: url("./add-user.png");
+  }
+  .customerInfoCard{
+    padding: 8px 8px;
+    margin: 0 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #aaa;
+    border-radius: $border-radius-small;
+    .rows{
+      display: grid;
+      grid-template-columns: 3fr 4fr;
+      padding-bottom: 4px;
+      &:last-child{
+        padding-bottom: 0;
+      }
+    }
+  }
+  .customerInfoCardList{
+    padding-bottom: 0;
+    max-height: 232px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .customerInfoCardList::-webkit-scrollbar{
+    background-color: white;
+    width: 4px;
+  }
+  .customerInfoCardList::-webkit-scrollbar-thumb{
+    background-color: $background4;
+  }
+  .hideScroll::-webkit-scrollbar{
+    display: none;
+  }
+}

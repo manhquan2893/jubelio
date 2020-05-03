@@ -1,0 +1,10 @@
+@import 'assets/variables.scss';
+
+.transactionTableRow{
+    td{
+      padding: 4px 16px !important;
+      &:nth-child(2){
+        text-align: right;
+      }
+    }
+  }

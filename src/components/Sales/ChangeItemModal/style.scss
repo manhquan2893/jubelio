@@ -1,0 +1,129 @@
+@import 'assets/variables.scss';
+.changeItemModal{
+  .ant-modal-content{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 350px;
+    left: 142px;
+  }
+  .ant-row{
+    margin: 0;
+  }
+  .ant-modal-body{
+    padding:  $modal-body-padding;
+  }
+  .ant-modal-footer{
+    position: relative;
+    padding: $modal-footer-padding;
+    border-bottom: $border-bottom-header;
+    .ant-btn{
+      border: none;
+      background-color: $background1;
+      color: white;
+    }
+    .ant-btn-primary{
+      background-color: $background4;
+      border: none;
+    }
+    &::before{
+      content: "Ubah Barang";
+      font-size: 20px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    div{
+      display: flex;
+      justify-content: space-between;
+      padding:0;
+    }
+  }
+  .itemTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    .fa-trash-alt{
+      cursor: pointer;
+    }
+    .itemTitleText{
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+  .itemInfo{
+    .itemImage{
+      width: 90px;
+      height: 110px;
+      margin-right: 10px;
+      img{
+        width: 84px;
+      }
+    }
+    .itemInfoText{
+      flex: auto;
+      table{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        td{
+          padding: 4px 0;
+          &:nth-child(2){
+            float: right;
+          }
+        }
+      }
+    }
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .divider{
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    margin: 10px 0 8px 0;
+  }
+  .changeAdditionalInfo{
+    .changeDiscount,
+    .changeTax{
+      display: grid;
+      grid-template-columns:4fr 2fr 2fr 4fr;
+      margin-bottom: 10px;
+      span{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .cells{
+        display: flex;
+        margin-right: 0;
+        margin-left: auto;
+        .percent,
+        .rp{
+          border:1px solid #d9d9d9;
+          padding: 0 10px;
+          margin-right: 2px;
+        }
+      }
+      .number{
+        text-align: end;
+      }
+    }
+    
+  }
+}
+.changeAdditionalInfoPopover{
+  .ant-popover-inner-content{
+    padding: 8px;
+  }
+  .percents{
+    .percentItem{
+      padding: 1px;
+      border: 1px solid #777;
+      cursor: pointer;
+    }
+    display: grid;
+    gap: 7px 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

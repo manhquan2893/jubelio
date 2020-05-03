@@ -1,0 +1,55 @@
+.headerInfoSection{
+  display: flex;
+  margin-bottom: 16px;
+  height: 50px;
+  .headerInfoItem {
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .brand {
+    flex: 0 0 154px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .brandName {
+      font-size: 16px;
+      margin-left: 5px;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .profile {
+    min-width: 160px;
+    text-align: center;
+    .userName{
+      margin-left: 5px;
+      font-size: 16px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .grand {
+    flex: 0 1 100%;
+    min-width: 400px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .icon {
+    max-width: 50px;
+    min-width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

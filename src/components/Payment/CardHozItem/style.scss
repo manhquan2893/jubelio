@@ -1,0 +1,88 @@
+.card-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  font-weight: bold;
+
+  &__diff {
+    height: 100%;
+    width: 10px;
+    background: black;
+  }
+
+  &__diskon,
+  &__amount {
+    display: inline-block;
+    margin: 0 2px;
+    background: #f5222d;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__amount {
+    background: #a0d911;
+    width: 20px;
+  }
+
+  &__content {
+    display: flex;
+    height: 100%;
+    padding: 4px;
+  }
+
+  &__left {
+    img {
+      width: 32px;
+      height: 40px;
+    }
+  }
+
+  &__code {
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__right {
+    padding: 0 4px;
+    font-size: 13px;
+    span {
+      padding: 0 5px;
+    }
+  }
+
+  &__price {
+    padding: 0 4px;
+
+    &-row1,
+    &-row3 {
+      font-size: 11px;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &-row2 {
+      font-size: 14px;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  i {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    padding: 4px;
+  }
+}
